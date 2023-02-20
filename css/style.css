@@ -4,3 +4,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* DEBUG */
+.container {
+  border: 2px dashed red;
+  background-color: #eeeeee;
+}
+
+.header-nav-dropdown {
+  border: 2px dashed blue;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.nav-list {
+  list-style: none;
+}

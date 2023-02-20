@@ -29,6 +29,55 @@
 
   <body>
     <!-- vue start -->
-    <div id="root"></div>
+    <div id="root">
+      <header>
+        <nav>
+          <div class="container d-flex">
+            <img src="./img/header-img/logo.png" alt="logo" />
+            <div class="header-nav-dropdown d-flex">
+              <ul class="nav-list d-flex" v-for="navLink in navLinks">
+                <li class="nav-item dropdown">{{ navLink.name }}</li>
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  v-show="navLink.dropdownMenu"
+                >
+                </a>
+                <ul class="dropdown-menu" v-for="drop in navLink.dropdowns">
+                  <li>
+                    <a class="dropdown-item" href="#">{{ drop.type }}</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">{{ drop.action }}</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">{{ drop.moreInfo }}</a>
+                  </li>
+                </ul>
+
+                <!-- {{ navLinks.dropdowns }} -->
+              </ul>
+            </div>
+            <div class="">
+              <img src="./img/icon/cart-icon.png" alt="cart" />
+              <button>LIVE STREAMING</button>
+            </div>
+          </div>
+        </nav>
+        <section class="jumbotron"></section>
+      </header>
+
+      <main></main>
+      <footer></footer>
+    </div>
+    <!-- BOOTSTRAP SCRIPT -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
