@@ -26,7 +26,7 @@ header {
   justify-content: center;
 }
 
-.nav-list {
+ul > li {
   list-style: none;
 }
 
@@ -52,4 +52,22 @@ header {
   width: 600px;
   height: 600px;
   border: 1px dashed fuchsia;
+}
+
+/* 1st SECTION PLATFORM */
+
+.platform {
+  height: 90vh;
+  border: 5px dashed fuchsia;
+}
+
+.platform-img > img {
+  width: 700px;
+  height: 600px;
+  border: 1px dashed darkmagenta;
+}
+
+.platform-title {
+  width: 500px;
+  border: 2px dashed green;
 }
