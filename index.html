@@ -32,8 +32,11 @@
     <div id="root">
       <header>
         <nav>
+          <!-- Container -->
           <div class="container d-flex">
+            <!-- Nav Logo -->
             <img src="./img/header-img/logo.png" alt="logo" />
+            <!-- Nav Links -->
             <div class="header-nav-dropdown d-flex">
               <ul class="nav-list d-flex" v-for="navLink in navLinks">
                 <li class="nav-item dropdown">{{ navLink.name }}</li>
@@ -56,21 +59,53 @@
                   <li>
                     <a class="dropdown-item" href="#">{{ drop.moreInfo }}</a>
                   </li>
+                  <li>
+                    <a class="dropdown-item" href="#">{{ drop.aa }}</a>
+                  </li>
                 </ul>
-
-                <!-- {{ navLinks.dropdowns }} -->
               </ul>
             </div>
-            <div class="">
+            <!-- Nav Cart & Button -->
+            <div>
               <img src="./img/icon/cart-icon.png" alt="cart" />
               <button>LIVE STREAMING</button>
             </div>
           </div>
         </nav>
-        <section class="jumbotron"></section>
+        <!-- Jumbotron -->
+        <section class="jumbotron">
+          <div class="container d-flex">
+            <!-- jumbo Text -->
+            <div class="jumbo-title">
+              <div class="debug">Game With Live Streaming</div>
+              <h1>Future Of Esports</h1>
+              <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eveniet, adipisci? Lorem ipsum dolor sit amet consectetur
+                adipisicing elit.
+              </div>
+              <button>EXPLORE GAMES</button>
+              <span class="roundBtn">
+                <img src="./img/icon/play-icon.png" alt="play" />
+              </span>
+            </div>
+            <!-- Jumbo Image -->
+            <div class="jumbo-img">
+              <img src="./img/header-img/index-banner-illus.png" alt="soldier" />
+            </div>
+          </div>
+        </section>
       </header>
-
-      <main></main>
+      <!-- Main -->
+      <main>
+        <!-- 1st Section Platform -->
+        <div class="platform">
+          <div class="platform-img">
+              <img src="./img/header-img/index-banner-illus.png" alt="soldier" />
+            </div>
+          </div>
+        </div>
+      </main>
       <footer></footer>
     </div>
     <!-- BOOTSTRAP SCRIPT -->

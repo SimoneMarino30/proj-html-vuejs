@@ -8,7 +8,16 @@
 /* DEBUG */
 .container {
   border: 2px dashed red;
-  background-color: #eeeeee;
+  /* background-color: #eeeeee; */
+}
+
+/* HEADER NAV */
+
+header {
+  /* background: url(../img/header-img/index-banner-bg.png); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90vh;
 }
 
 .header-nav-dropdown {
@@ -19,4 +28,28 @@
 
 .nav-list {
   list-style: none;
+}
+
+/* JUMBOTRON */
+.section {
+  /* background-color: #ccc; */
+}
+
+.jumbo-title {
+  width: 500px;
+  border: 2px dashed green;
+}
+
+.roundBtn {
+  margin-top: 300px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  /* border-radius: 50%; */
+}
+
+.jumbo-img > img {
+  width: 600px;
+  height: 600px;
+  border: 1px dashed fuchsia;
 }

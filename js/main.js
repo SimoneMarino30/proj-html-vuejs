@@ -44,6 +44,7 @@ createApp({
               type: "Pages",
               action: "Content",
               moreInfo: "Further informations",
+              aa: "aaaa",
             },
           ],
         },
