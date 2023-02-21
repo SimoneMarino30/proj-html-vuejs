@@ -33,15 +33,15 @@
       <header>
         <nav>
           <!-- Container -->
-          <div class="container navBar d-flex">
+          <div class="container navBar d-flex align-items-center py-3">
             <!-- Nav Logo -->
-            <img src="./img/header-img/logo.png" alt="logo" />
+            <img src="./img/header-img/logo.png" alt="logo" class="nav-logo" />
             <!-- Nav Links -->
-            <div class="header-nav-dropdown d-flex">
-              <ul class="nav-list d-flex" v-for="navLink in navLinks">
+            <div class="header-nav-dropdown d-flex align-items-center">
+              <ul class="nav-list d-flex p-1" v-for="navLink in navLinks">
                 <li class="nav-item dropdown">{{ navLink.name }}</li>
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle ms-1 mt-1"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -67,8 +67,8 @@
             </div>
             <!-- Nav Cart & Button -->
             <div>
-              <img src="./img/icon/cart-icon.png" alt="cart" />
-              <button>LIVE STREAMING</button>
+              <img src="./img/icon/cart-icon.png" alt="cart" class="ms-4" />
+              <button class="myButton ms-4">LIVE STREAMING</button>
             </div>
           </div>
         </nav>
@@ -79,23 +79,33 @@
             <div class="jumbo-title">
               <div class="mini-title">Game With Live Streaming</div>
               <h1>Future Of Esports</h1>
-              <div>
+              <small>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eveniet, adipisci? Lorem ipsum dolor sit amet consectetur
-                adipisicing elit.
-              </div>
-              <button>EXPLORE GAMES</button>
-              <span class="roundBtn">
-                <img src="./img/icon/play-icon.png" alt="play" />
+                Eveniet? Lorem ipsum dolor sit.
+              </small>
+              <button class="myButton mt-4 me-4">EXPLORE GAMES</button>
+              <span>
+                <img
+                  src="./img/icon/play-icon.png"
+                  alt="play"
+                  class="roundBtn"
+                />
               </span>
             </div>
             <!-- Jumbo Image -->
-            <div class="jumbo-img">
+            <div class="jumbo-img position-relative">
               <img
                 src="./img/header-img/index-banner-illus.png"
                 alt="soldier"
               />
             </div>
+          </div>
+          <div class="position-relative">
+            <img
+              src="./img/header-img/game-controler-2.png"
+              alt="joypad"
+              class="controller-img"
+            />
           </div>
         </section>
       </header>
@@ -265,40 +275,48 @@
         </section>
         <!-- 4th Section Livestreaming -->
         <section id="livestreaming" class="text-center">
-          <div class="mini-title">Live Streaming</div>
-          <h1>Watch The Streams</h1>
-          <!-- small? -->
-          <div>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore eum
-            dolores alias esse aliquam quos.
+          <div class="container">
+            <div class="mini-title">Live Streaming</div>
+            <h1>Watch The Streams</h1>
+            <!-- small? -->
+            <div>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
+              eum dolores alias esse aliquam quos.
+            </div>
+            <img src="" alt="lol" />
           </div>
-          <img src="" alt="lol" />
         </section>
         <!-- 5th Section Feedback -->
         <section id="feedback" class="text-center">
-          <div class="mini-title">Futio Feedback</div>
-          <h1>What Our Gamers Say</h1>
-          <!-- small? -->
-          <div>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore eum
-            dolores alias esse aliquam quos.
+          <div class="container">
+            <div class="mini-title">Futio Feedback</div>
+            <h1>What Our Gamers Say</h1>
+            <!-- small? -->
+            <div>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
+              eum dolores alias esse aliquam quos.
+            </div>
+            <div>carousel</div>
           </div>
-          <div>carousel</div>
         </section>
         <!-- 6th Section Discount Banner -->
         <section id="discount-banner" class="text-center">
-          <div>Make Offer</div>
-          <h1>Get 70% Offer discount</h1>
-          <button>Get Offers</button>
+          <div class="container">
+            <div>Make Offer</div>
+            <h1>Get 70% Offer discount</h1>
+            <button>Get Offers</button>
+          </div>
         </section>
         <!-- 7th Section Latest News -->
         <section id="latest-news" class="text-center">
-          <div class="mini-title">Latest News</div>
-          <h1>Stay Update With Our Latest News Articles</h1>
-          <!-- small? -->
-          <div>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore eum
-            dolores alias esse aliquam quos.
+          <div class="container">
+            <div class="mini-title">Latest News</div>
+            <h1>Stay Update With Our Latest News Articles</h1>
+            <!-- small? -->
+            <div>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
+              eum dolores alias esse aliquam quos.
+            </div>
           </div>
         </section>
         <!-- Newslewtter -->
