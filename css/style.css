@@ -24,7 +24,9 @@ section {
   border: 1px solid lawngreen;
   /* height: 100px; */
 }
-
+/* **********************************
+          DOPPIO 
+****************/
 .col-6 {
   border: 1px solid royalblue;
   /* height: 100px; */
@@ -77,7 +79,7 @@ ul > li {
 
 /* 1st SECTION PLATFORM */
 
-.platform {
+#platform {
   height: 90vh;
   border: 5px dashed fuchsia;
 }
@@ -119,3 +121,32 @@ ul > li {
   border: 1px solid black;
   border-radius: 10px;
 }
+
+/* 4th SECTION LIVESTREAMING */
+
+#livestreaming {
+  background-image: url(../img/live-streaming-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+/* 5th SECTION FEEDBACK */
+
+#feedback {
+}
+
+/* 6th SECTION DISCOUNT BANNER */
+#discount-banner {
+}
+
+/* 7th SECTION LATEST NEWS */
+
+#latest-news {
+}
+
+/* NEWSLETTER BANNER */
+#newsletter-banner {
+}
+
+/* FOOTER */
