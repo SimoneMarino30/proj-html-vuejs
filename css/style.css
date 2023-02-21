@@ -3,7 +3,9 @@
   --button-color: #08cb7b;
   --description: #f7f7f2;
   --big-title: #ffffff;
+  --small-title: #94cb53;
   --bg-section-dark: #000000;
+  --card-petrol: #30405f;
 }
 /* DARK GREEN: #08CB7B */
 /* LIGHT GREEN: #94CB53 */
@@ -42,13 +44,12 @@ body {
 }
 .mini-title {
   font-size: 1.5rem;
-  color: #94cb53;
+  color: var(--small-title);
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 600;
-  margin: 1rem 0;
   color: var(--big-title);
 }
 
@@ -56,6 +57,10 @@ h1 {
   color: var(--description);
 }
 
+a {
+  text-decoration: none;
+  color: var(--description);
+}
 /* HEADER NAV */
 
 header {
@@ -126,7 +131,6 @@ ul > li {
 .platform-img > img {
   width: 700px;
   margin-top: 3rem;
-
   /* border: 1px dashed darkmagenta; */
 }
 
@@ -142,24 +146,53 @@ ul > li {
   height: 60px;
   margin-right: 1.5rem;
 }
+
 /* 2nd SECTION CARDS */
 
-.col-6 {
-  border: 1px solid black;
-  height: 200px;
+#trending-battles {
+  min-height: 99vh;
+  background-color: #212733;
+  margin-bottom: 2rem;
 }
 
-.card > img {
-  border: 1px solid black;
-  width: 100px;
-  height: 100px;
+.cardContainer {
+  padding-bottom: 3rem;
+}
+.myCard {
+  background-color: #1d2d49;
+  border: 1px solid #1d2d49;
+  width: 40%;
+  border-radius: 30px;
+  height: 270px;
 }
 
-.card > img.versus {
+.myCard > img {
+  /* border: 1px solid black; */
+  margin-top: 1rem;
+  width: 70px;
+  height: 70px;
+}
+
+.myCard > img.versus {
   width: 50px;
   height: 50px;
 }
 
+.cardGame {
+  background-color: #30415f;
+  border: 1px solid #1d2d49;
+  height: 80px;
+}
+
+.card-text {
+  color: var(--small-title);
+}
+
+.social > img {
+  width: 20px;
+  height: 20px;
+  margin: 0 0.2rem;
+}
 /* 3rd SECTION QUICK FACTS */
 
 .label {
