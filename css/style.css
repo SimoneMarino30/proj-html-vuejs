@@ -152,12 +152,12 @@ ul > li {
 #trending-battles {
   min-height: 99vh;
   background-color: #212733;
-  margin-bottom: 2rem;
 }
 
 .cardContainer {
   padding-bottom: 3rem;
 }
+
 .myCard {
   background-color: #1d2d49;
   border: 1px solid #1d2d49;
@@ -193,12 +193,26 @@ ul > li {
   height: 20px;
   margin: 0 0.2rem;
 }
+
 /* 3rd SECTION QUICK FACTS */
 
+#quick {
+  background-color: var(--bg-section-dark);
+}
+
+.quick-number {
+  font-size: 3rem;
+  color: var(--description);
+}
+
+.quick-text {
+  color: var(--small-title);
+}
 .label {
   height: 100px;
-  width: 100px;
-  border: 1px solid black;
+  width: 150px;
+  margin: 1rem;
+  border: 1px solid var(--description);
   border-radius: 10px;
 }
 
