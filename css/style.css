@@ -1,8 +1,9 @@
 /* Colours Palette */
 :root {
   --button-color: #08cb7b;
-  --bg-description: #f7f7f2;
-  --bg-big-title: #ffffff;
+  --description: #f7f7f2;
+  --big-title: #ffffff;
+  --bg-section-dark: #000000;
 }
 /* DARK GREEN: #08CB7B */
 /* LIGHT GREEN: #94CB53 */
@@ -37,7 +38,7 @@ body {
   background-color: var(--button-color);
   opacity: 100%;
   border: none;
-  font-weight: bold;
+  font-weight: 500;
 }
 .mini-title {
   font-size: 1.5rem;
@@ -48,11 +49,11 @@ h1 {
   font-size: 4rem;
   font-weight: 600;
   margin: 1rem 0;
-  color: var(--bg-big-title);
+  color: var(--big-title);
 }
 
 .title-description {
-  color: var(--bg-description);
+  color: var(--description);
 }
 
 /* HEADER NAV */
@@ -117,21 +118,30 @@ ul > li {
 /* 1st SECTION PLATFORM */
 
 #platform {
-  height: 90vh;
-  border: 5px dashed fuchsia;
+  height: 99vh;
+  background-color: var(--bg-section-dark);
+  /* border: 5px dashed fuchsia; */
 }
 
 .platform-img > img {
   width: 700px;
-  height: 600px;
-  border: 1px dashed darkmagenta;
+  margin-top: 3rem;
+
+  /* border: 1px dashed darkmagenta; */
 }
 
 .platform-title {
+  margin: 2rem 0 0 5rem;
+  color: var(--description);
   width: 500px;
-  border: 2px dashed green;
+  /* border: 2px dashed green; */
 }
 
+.live-img {
+  width: 60px;
+  height: 60px;
+  margin-right: 1.5rem;
+}
 /* 2nd SECTION CARDS */
 
 .col-6 {
