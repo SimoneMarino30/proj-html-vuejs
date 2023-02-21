@@ -208,6 +208,7 @@ ul > li {
 .quick-text {
   color: var(--small-title);
 }
+
 .label {
   height: 100px;
   width: 150px;
@@ -222,12 +223,16 @@ ul > li {
   background-image: url(../img/live-streaming-bg.png);
   background-size: contain;
   background-repeat: no-repeat;
-  color: wheat;
+  color: var(--description);
+  height: 90vh;
+  padding-top: 5rem;
 }
 
 /* 5th SECTION FEEDBACK */
 
 #feedback {
+  padding-top: 8rem;
+  background-color: var(--bg-section-dark);
 }
 
 /* 6th SECTION DISCOUNT BANNER */
