@@ -25,6 +25,7 @@
 body {
   font-family: "Teko", sans-serif;
 }
+
 /* DEBUG */
 .container {
   /* border: 2px dashed red; */
@@ -228,6 +229,11 @@ ul > li {
   padding-top: 5rem;
 }
 
+.z-img {
+  position: absolute;
+  left: 120px;
+  z-index: 1;
+}
 /* 5th SECTION FEEDBACK */
 
 #feedback {
@@ -235,10 +241,57 @@ ul > li {
   background-color: var(--bg-section-dark);
 }
 
-/* 6th SECTION DISCOUNT BANNER */
-#discount-banner {
+.black-patch {
+  height: 100px;
+  width: 100%;
+  background-color: var(--bg-section-dark);
+  position: absolute;
+  top: -88px;
+  /* border: 1px dashed yellowgreen; */
 }
 
+/* 6th SECTION DISCOUNT BANNER */
+#discount-banner {
+  background-color: var(--bg-section-dark);
+  padding-top: 10rem;
+}
+
+.offer-bg {
+  background-image: url(../img/discount-img/banner-item-bg.png);
+  min-height: 60vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.phone {
+  left: 0;
+  bottom: 10px;
+}
+
+.earphones {
+  width: 20%;
+  right: 10px;
+  bottom: 250px;
+}
+
+.black-patch-phone {
+  height: 144px;
+  width: 100%;
+  background-color: var(--bg-section-dark);
+  position: absolute;
+  bottom: 7px;
+  right: 10px;
+}
+
+.black-patch-ears {
+  height: 70px;
+  width: 100%;
+  background-color: var(--bg-section-dark);
+  /* border: 1px solid yellowgreen; */
+  position: absolute;
+  bottom: 433px;
+  right: 10px;
+}
 /* 7th SECTION LATEST NEWS */
 
 #latest-news {
@@ -249,3 +302,22 @@ ul > li {
 }
 
 /* FOOTER */
+
+/* CAROUSEL DEBUG */
+#carouselExampleCaptions {
+  color: wheat;
+}
+.carousel-inner {
+  border: 1px solid teal;
+  color: wheat;
+}
+
+.carousel-item {
+  border: 1px solid yellowgreen;
+  color: wheat;
+}
+
+.carousel-caption {
+  border: 1px solid blue;
+  color: wheat;
+}
