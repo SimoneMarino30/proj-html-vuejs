@@ -85,9 +85,12 @@
               </ul>
             </div>
             <!-- Nav Cart & Button -->
-            <div>
+            <div class="button-container">
               <img src="./img/icon/cart-icon.png" alt="cart" class="ms-4" />
               <button class="myButton ms-4">LIVE STREAMING</button>
+              <div class="cart-dot d-flex justify-content-center">
+                <span>3</span>
+              </div>
             </div>
           </div>
         </nav>
@@ -321,6 +324,7 @@
                 </div>
               </div>
             </div>
+            <button class="myButton mb-3">VIEW ALL MATCHES</button>
           </div>
         </section>
         <!-- 3rd Section Quick Facts -->
@@ -363,6 +367,31 @@
               alt="battle"
               class="w-75 mt-5 z-img"
             />
+            <!-- live label -->
+            <div class="live-container-label position-absolute">
+              <label class="live-button btn btn-warning">
+                <img src="./img/icon/live-icon.png" alt="" />
+                <span class="mx-2">Live</span>
+              </label>
+            </div>
+            <!-- round button -->
+            <div class="live-container-round-button position-absolute">
+              <label class="live-round-button">
+                <img
+                  src="./img/icon/play-icon.png"
+                  alt="play"
+                  class="roundBtn"
+                />
+                <div class="my-2 fs-4">League Of Legends</div>
+              </label>
+            </div>
+            <!-- viewers -->
+            <div class="position-absolute live-viewers">
+              <span class="number-of-viewers me-2">303.333</span>
+              <span class="me-3">Viewers</span>
+              <span class="number-of-viewers mx-2">33.333</span>
+              <span class="">Likes</span>
+            </div>
           </div>
         </section>
         <!-- 5th Section Feedback -->
@@ -380,7 +409,11 @@
               <div id="my-card" class="card" style="width: 18rem">
                 <div id="my-card-body" class="card-body">
                   <div id="my-card-title" class="card-title text-start">
-                    stars
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
                   </div>
 
                   <p id="my-card-text" class="card-text text-start">
@@ -396,8 +429,8 @@
                       class="card-link"
                     />
                     <div class="d-flex flex-column ms-3">
-                      <div class="a">Kim Ross</div>
-                      <div class="a">Serbia</div>
+                      <div class="a">Mario Bianchi</div>
+                      <div class="a number-of-viewers">Italia</div>
                     </div>
                   </div>
                 </div>
@@ -406,7 +439,11 @@
               <div id="my-card" class="card" style="width: 18rem">
                 <div id="my-card-body" class="card-body">
                   <div id="my-card-title" class="card-title text-start">
-                    stars
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
                   </div>
                   <p id="my-card-text" class="card-text text-start">
                     "Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -415,14 +452,14 @@
                   </p>
                   <div class="d-flex flex">
                     <img
-                      src="./img/testimonials carousel/testimonials-image-1.png"
+                      src="./img/testimonials carousel/testimonials-image-2.png"
                       alt=""
                       id="my-card-link"
                       class="card-link"
                     />
                     <div class="d-flex flex-column ms-3">
-                      <div class="a">Kim Ross</div>
-                      <div class="a">Serbia</div>
+                      <div class="a">Gary Francis</div>
+                      <div class="a number-of-viewers">Francia</div>
                     </div>
                   </div>
                 </div>
@@ -431,7 +468,11 @@
               <div id="my-card" class="card" style="width: 18rem">
                 <div id="my-card-body" class="card-body">
                   <div id="my-card-title" class="card-title text-start">
-                    stars
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
                   </div>
                   <p id="my-card-text" class="card-text text-start">
                     "Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -440,14 +481,14 @@
                   </p>
                   <div class="d-flex flex">
                     <img
-                      src="./img/testimonials carousel/testimonials-image-1.png"
+                      src="./img/testimonials carousel/testimonials-image-3.png"
                       alt=""
                       id="my-card-link"
                       class="card-link"
                     />
                     <div class="d-flex flex-column ms-3">
                       <div class="a">Kim Ross</div>
-                      <div class="a">Serbia</div>
+                      <div class="a number-of-viewers">Serbia</div>
                     </div>
                   </div>
                 </div>
@@ -493,10 +534,31 @@
               <div class="row">
                 <div class="main-news-img col">
                   <img src="./img/blog-item-1.png" alt="" />
-                  <div class="abs-news-stats d-flex justify-content-start ms-4">
-                    <div>10 Min</div>
-                    <div>240</div>
-                    <div>Apr 11 2022</div>
+                  <div class="abs-news-stats d-flex justify-content-start ms-3">
+                    <div>
+                      <span
+                        ><img
+                          src="./img/icon/clock.png"
+                          alt=""
+                          class="me-1 w-25"
+                      /></span>
+                      <span>10 Min</span>
+                    </div>
+                    <div>
+                      <span
+                        ><img src="./img/icon/eye.png" alt="" class="me-1"
+                      /></span>
+                      <span>240</span>
+                    </div>
+                    <div>
+                      <span
+                        ><img
+                          src="./img/icon/calendar.png"
+                          alt=""
+                          class="me-1 w-25"
+                      /></span>
+                      <span>Apr 11 2022</span>
+                    </div>
                   </div>
 
                   <h2 class="news-text ms-4">
@@ -506,9 +568,30 @@
                 <!-- Thumbnails -->
                 <div class="thumb col d-flex flex-column">
                   <div class="abs-news-stats d-flex">
-                    <div>10 Min</div>
-                    <div>240</div>
-                    <div>Apr 11 2022</div>
+                    <div>
+                      <span
+                        ><img
+                          src="./img/icon/clock.png"
+                          alt=""
+                          class="me-1 w-25"
+                      /></span>
+                      <span>10 Min</span>
+                    </div>
+                    <div>
+                      <span
+                        ><img src="./img/icon/eye.png" alt="" class="me-1"
+                      /></span>
+                      <span>240</span>
+                    </div>
+                    <div>
+                      <span
+                        ><img
+                          src="./img/icon/calendar.png"
+                          alt=""
+                          class="me-1 w-25"
+                      /></span>
+                      <span>Apr 11 2022</span>
+                    </div>
                   </div>
                   <div class="abs-news-text mt-5">
                     Top 5 Most Important Aspects Of Your Game
@@ -519,9 +602,28 @@
                   <!-- thumb 2 -->
                   <div class="thumb col">
                     <div class="abs-news-stats d-flex">
-                      <div>10 Min</div>
-                      <div>240</div>
-                      <div>Apr 11 2022</div>
+                      <div>
+                        <span
+                          ><img
+                            src="./img/icon/clock.png"
+                            alt=""
+                            class="me-1 w-25"
+                        /></span>
+                        <span>10 Min</span>
+                      </div>
+                      <div>
+                        <span><img src="./img/icon/eye.png" alt="" /></span>
+                        <span>240</span>
+                      </div>
+                      <div>
+                        <span
+                          ><img
+                            src="./img/icon/calendar.png"
+                            alt=""
+                            class="me-1 w-25"
+                        /></span>
+                        <span>Apr 11 2022</span>
+                      </div>
                     </div>
                     <div class="abs-news-text mt-5">
                       The Rise Of Fantasy Sports And Online Games
@@ -533,9 +635,28 @@
                   <!-- thumb 3 -->
                   <div class="thumb col">
                     <div class="abs-news-stats d-flex">
-                      <div>10 Min</div>
-                      <div>240</div>
-                      <div>Apr 11 2022</div>
+                      <div>
+                        <span
+                          ><img
+                            src="./img/icon/clock.png"
+                            alt=""
+                            class="me-1 w-25"
+                        /></span>
+                        <span>10 Min</span>
+                      </div>
+                      <div>
+                        <span><img src="./img/icon/eye.png" alt="" /></span>
+                        <span>240</span>
+                      </div>
+                      <div>
+                        <span
+                          ><img
+                            src="./img/icon/calendar.png"
+                            alt=""
+                            class="me-1 w-25"
+                        /></span>
+                        <span>Apr 11 2022</span>
+                      </div>
                     </div>
                     <div class="abs-news-text mt-5">
                       Benefits Of Gaming - PC And Video Games
@@ -642,7 +763,12 @@
         </div>
       </footer>
     </div>
-    <section id="copy"></section>
+    <section id="copy" class="text-center">
+      <div class="pt-4">
+        Copyright &reg; 2002 <span class="location-name">FUTIO.</span> All
+        Rights Reserved
+      </div>
+    </section>
     <!-- BOOTSTRAP SCRIPT -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

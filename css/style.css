@@ -141,6 +141,18 @@ ul > li {
   list-style: none;
 }
 
+/* Senio Relative: Button Container */
+.cart-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--bg-section-dark);
+  position: absolute;
+  top: 0.2rem;
+  left: 2.5rem;
+  z-index: 3;
+  background-color: var(--button-color);
+}
 /* JUMBOTRON */
 
 .jumbo-title {
@@ -287,6 +299,37 @@ ul > li {
   left: 120px;
   z-index: 1;
 }
+
+.live-container-label {
+  top: 14rem;
+  right: 10rem;
+  z-index: 2;
+}
+
+.live-button {
+  width: 100px;
+  height: 33px;
+  border-radius: 30px;
+
+  border: none;
+  font-weight: 500;
+}
+
+.live-container-round-button {
+  top: 24rem;
+  right: 28rem;
+  z-index: 2;
+}
+
+.number-of-viewers {
+  color: #94cb53;
+}
+
+.live-viewers {
+  left: 9rem;
+  z-index: 2;
+  top: 37rem;
+}
 /* 5th SECTION FEEDBACK */
 
 #feedback {
@@ -332,8 +375,8 @@ ul > li {
   width: 3rem;
 }
 
-.a {
-  border: 1px solid violet;
+.checked {
+  color: gold;
 }
 /* 6th SECTION DISCOUNT BANNER */
 #discount-banner {
@@ -472,7 +515,7 @@ ul > li {
 .mail-sender {
   top: 90%;
   left: 57%;
-
+  z-index: 1;
   width: 17rem;
   padding: 10px;
   border-radius: 10px;
@@ -481,7 +524,7 @@ ul > li {
 /* FOOTER */
 footer {
   background-color: var(--bg-card);
-  height: 50rem;
+  height: 40rem;
 }
 
 .foot.row {
@@ -530,4 +573,12 @@ footer {
 
 .email-img > img {
   width: 1.3rem;
+}
+
+/* COPYRIGHT SECTION */
+
+#copy {
+  height: 5rem;
+  color: var(--description);
+  background-color: var(--bg-section-dark);
 }
