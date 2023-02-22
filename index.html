@@ -54,11 +54,13 @@
             <!-- Nav Logo -->
             <img src="./img/header-img/logo.png" alt="logo" class="nav-logo" />
             <!-- Nav Links -->
-            <div class="header-nav-dropdown d-flex align-items-center">
+            <div class="header-nav-dropdown d-flex">
               <ul class="nav-list d-flex p-1" v-for="navLink in navLinks">
-                <li class="nav-item dropdown">{{ navLink.name }}</li>
+                <li class="nav-item dropdown dropdown-hover">
+                  {{ navLink.name }}
+                </li>
                 <a
-                  class="nav-link dropdown-toggle ms-1 mt-1"
+                  class="dropdown-hover nav-link dropdown-toggle ms-1 mt-1"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -77,7 +79,7 @@
                     <a class="dropdown-item" href="#">{{ drop.moreInfo }}</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">{{ drop.aa }}</a>
+                    <a class="dropdown-item" href="#">{{ drop.socialPage }}</a>
                   </li>
                 </ul>
               </ul>
@@ -100,14 +102,16 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Eveniet? Lorem ipsum dolor sit.
               </div>
-              <button class="myButton mt-4 me-4">EXPLORE GAMES</button>
-              <span>
-                <img
-                  src="./img/icon/play-icon.png"
-                  alt="play"
-                  class="roundBtn"
-                />
-              </span>
+              <div class="button-container">
+                <button class="myButton mt-4 me-4">EXPLORE GAMES</button>
+                <span>
+                  <img
+                    src="./img/icon/play-icon.png"
+                    alt="play"
+                    class="roundBtn"
+                  />
+                </span>
+              </div>
             </div>
             <!-- Jumbo Image -->
             <div class="jumbo-img position-relative">
@@ -568,7 +572,12 @@
       <!-- Footer -->
       <footer>
         <div class="container">
-          <div class="foot row">
+          <div class="foot row position-relative">
+            <div
+              class="email-img d-flex align-items-center justify-content-center"
+            >
+              <img src="./img/icon/send-icon.png" alt="" />
+            </div>
             <div class="foot col-4">
               <div class="foot logo pt-3">
                 <img src="./img/header-img/logo.png" alt="" />
@@ -578,22 +587,22 @@
                 </div>
                 <div class="foot-social-container d-flex">
                   <div
-                    class="foot social-logos d-flex align-items-center justify-content-center me-2"
+                    class="foot social-logos d-flex align-items-center justify-content-center me-2 social-hover"
                   >
                     <i class="fa-brands fa-youtube"></i>
                   </div>
                   <div
-                    class="foot social-logos d-flex align-items-center justify-content-center me-2"
+                    class="foot social-logos d-flex align-items-center justify-content-center me-2 social-hover"
                   >
                     <i class="fa-brands fa-twitch"></i>
                   </div>
                   <div
-                    class="foot social-logos d-flex align-items-center justify-content-center me-2"
+                    class="foot social-logos d-flex align-items-center justify-content-center me-2 social-hover"
                   >
                     <i class="fa-brands fa-facebook"></i>
                   </div>
                   <div
-                    class="foot social-logos d-flex align-items-center justify-content-center"
+                    class="foot social-logos d-flex align-items-center justify-content-center social-hover"
                   >
                     <i class="fa-brands fa-instagram"></i>
                   </div>
@@ -603,19 +612,19 @@
             <div class="foot col-2">
               <ul v-for="toDoLink in footLinks">
                 <li class="fs-4 fw-semibold mt-3">{{ toDoLink.toDoTitle }}</li>
-                <li>{{ toDoLink.toDo }}</li>
+                <li class="color-hover">{{ toDoLink.toDo }}</li>
               </ul>
             </div>
             <div class="foot col-2">
               <ul v-for="faqLink in footLinks">
                 <li class="fs-4 fw-semibold">{{ faqLink.faqTitle }}</li>
-                <li>{{ faqLink.faq }}</li>
+                <li class="color-hover">{{ faqLink.faq }}</li>
               </ul>
             </div>
             <div class="foot col-2">
               <ul v-for="SocialLink in footLinks">
                 <li class="fs-4 fw-semibold">{{ SocialLink.socialTitle }}</li>
-                <li>{{ SocialLink.social }}</li>
+                <li class="color-hover">{{ SocialLink.social }}</li>
               </ul>
             </div>
             <div class="foot col-2">
@@ -624,7 +633,7 @@
                   {{ LocationLink.addressTitle }}
                 </li>
                 <li>
-                  <div>{{ LocationLink.name }}</div>
+                  <div class="location-name">{{ LocationLink.name }}</div>
                   <div>{{ LocationLink.address }}</div>
                 </li>
               </ul>

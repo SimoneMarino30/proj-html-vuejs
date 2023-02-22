@@ -8,13 +8,6 @@
   --card-petrol: #30405f;
   --bg-card: #1d2d49;
 }
-/* DARK GREEN: #08CB7B */
-/* LIGHT GREEN: #94CB53 */
-/* BLACK: #000000 */
-/* GRAY: #EBEBEB */
-/* PETROL BLUE: #30405F */
-/* ORANGE: FF9933 */
-/* WHITE: #FFFFFF */
 
 /* css reset */
 * {
@@ -27,38 +20,86 @@ body {
   font-family: "Teko", sans-serif;
 }
 
-/* DEBUG */
 .container {
-  /* border: 2px dashed red; */
   max-width: 1000px;
-  /* height: 90vh; */
-  /* background-color: #eeeeee; */
+}
+
+a {
+  text-decoration: none;
+  color: var(--description);
+}
+/*************** 
+      HOVER 
+****************/
+
+.dropdown-hover:hover {
+  color: var(--small-title);
+  cursor: pointer;
+}
+
+button:hover {
+  border: 3px solid var(--bg-section-dark);
+  outline: 3px solid var(--button-color);
+}
+
+.roundBtn:hover {
+  border: 1px solid var(--bg-section-dark);
+  outline: 3px solid var(--button-color);
+}
+
+.color-hover:hover {
+  color: var(--small-title);
+  cursor: pointer;
+}
+
+.social-hover:hover {
+  background-color: var(--small-title);
+  cursor: pointer;
+}
+
+/*************** 
+    BUTTONS 
+****************/
+.button-container {
+  /* border: 1px solid blue; */
+  width: fit-content;
+  position: relative;
+  z-index: 1;
 }
 
 .myButton {
-  width: 180px;
+  width: 160px;
   height: 50px;
   border-radius: 30px;
   background-color: var(--button-color);
-  opacity: 100%;
   border: none;
   font-weight: 500;
 }
+
+/*************** 
+    TITLES 
+****************/
 .mini-title {
   font-size: 1.5rem;
   color: var(--small-title);
 }
 
 h1 {
+  position: relative;
+  z-index: 1;
   font-size: 3.5rem;
   font-weight: 600;
   color: var(--big-title);
-  border: 3px solid firebrick;
+  /* border: 3px solid firebrick; */
+}
+
+.title-description {
+  position: relative;
+  z-index: 1;
 }
 
 .title {
   width: fit-content;
-
   font-size: 3.5rem;
   font-weight: 500;
   color: var(--big-title);
@@ -74,10 +115,6 @@ h1 {
   color: var(--description);
 }
 
-a {
-  text-decoration: none;
-  color: var(--description);
-}
 /* HEADER NAV */
 
 header {
@@ -88,7 +125,7 @@ header {
 }
 
 .nav-logo {
-  border: 2px dashed #94cb53;
+  /* border: 2px dashed #94cb53; */
   height: 50px;
 }
 
@@ -126,7 +163,6 @@ ul > li {
   top: -100px;
   left: 0px;
   width: 800px;
-  /* height: 800px; */
   /* border: 1px dashed fuchsia; */
 }
 
@@ -267,33 +303,33 @@ ul > li {
   /* border: 1px dashed yellowgreen; */
 }
 
-.feedback-card-container {
+/* .feedback-card-container {
   border: 1px solid brown;
-}
+} */
+
 #my-card {
   background-color: var(--bg-card);
   color: var(--description);
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   width: calc(100% / 3);
 }
 
-#my-card-body {
+/* #my-card-body {
   border: 1px solid firebrick;
-}
+} */
 
-#my-card-title {
+/* #my-card-title {
   border: 1px solid blue;
-}
+} */
 
 #my-card-text {
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
   color: var(--description);
 }
 
 #my-card-link {
-  border: 1px solid greenyellow;
+  /* border: 1px solid greenyellow; */
   width: 3rem;
-  /* height: 3rem; */
 }
 
 .a {
@@ -348,14 +384,14 @@ ul > li {
   min-height: 95vh;
 }
 
-.newsContainer {
-  /* border: 1px solid gray; */
-}
+/* .newsContainer {
+  border: 1px solid gray;
+} */
 
 .main-news-img {
   margin-top: 1rem;
   background-color: var(--bg-card);
-  border: 1px solid cyan;
+  /* border: 1px solid cyan; */
   border-radius: 20px;
 }
 
@@ -373,9 +409,8 @@ ul > li {
 
 .thumb {
   position: relative;
-
   /* margin-top: 3rem; */
-  border: 1px solid lightcoral;
+  /* border: 1px solid lightcoral; */
 }
 
 .thumb > .abs-news-stats {
@@ -450,38 +485,49 @@ footer {
 }
 
 .foot.row {
-  border: 3px solid blue;
+  /* border: 1px solid blue; */
   padding-top: 15rem;
   color: var(--description);
 }
 
 .foot .col-4 {
-  border: 3px solid red;
+  /* border: 3px solid red; */
   height: 15rem;
 }
 
 .foot.col-2 {
-  border: 3px solid orange;
+  /* border: 3px solid orange; */
   height: 15rem;
 }
 
-.foot .logo {
-  border: 3px solid purple;
-  /* height: 10rem; */
-}
-
 .foot .social-logos {
-  border: 1px solid white;
+  border: 1px solid var(--big-title);
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
 }
 
 .container-foot-titles {
-  border: 3px solid saddlebrown;
+  /* border: 3px solid saddlebrown; */
   height: 5rem;
 }
 
-.container-foot.col-2 {
-  border: 3px solid blue;
+.location-name {
+  color: #94cb53;
+}
+
+.email-img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid var(--big-title);
+  position: absolute;
+  z-index: 1;
+  background-color: var(--small-title);
+  top: -16px;
+  left: 83%;
+}
+
+.email-img > img {
+  width: 1.3rem;
 }

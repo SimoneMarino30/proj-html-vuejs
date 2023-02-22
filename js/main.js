@@ -37,14 +37,14 @@ createApp({
         },
 
         {
-          name: "Latest Tournament",
+          name: "Pages",
           dropdownMenu: true,
           dropdowns: [
             {
               type: "Pages",
               action: "Content",
               moreInfo: "Further informations",
-              aa: "aaaa",
+              socialPage: "Our Social Pages",
             },
           ],
         },
