@@ -53,6 +53,21 @@ h1 {
   font-size: 3.5rem;
   font-weight: 600;
   color: var(--big-title);
+  border: 3px solid firebrick;
+}
+
+.title {
+  width: fit-content;
+
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: var(--big-title);
+  /* border: 3px solid firebrick; */
+}
+
+.sub-title {
+  /* border: 3px solid lightseagreen; */
+  width: 70%;
 }
 
 .title-description {
@@ -73,7 +88,7 @@ header {
 }
 
 .nav-logo {
-  /* border: 2px dashed #94cb53; */
+  border: 2px dashed #94cb53;
   height: 50px;
 }
 
@@ -82,6 +97,7 @@ header {
   flex-grow: 1;
   justify-content: center;
   color: #ffffff;
+  z-index: 1;
 }
 
 ul > li {
@@ -297,7 +313,7 @@ ul > li {
 
 #latest-news {
   background-color: var(--bg-section-dark);
-  height: 97vh;
+  min-height: 95vh;
 }
 
 .newsContainer {
@@ -306,9 +322,8 @@ ul > li {
 
 .main-news-img {
   margin-top: 1rem;
-
   background-color: var(--bg-card);
-  /* border: 1px solid cyan; */
+  border: 1px solid cyan;
   border-radius: 20px;
 }
 
@@ -328,7 +343,7 @@ ul > li {
   position: relative;
 
   /* margin-top: 3rem; */
-  /* border: 1px solid lightcoral; */
+  border: 1px solid lightcoral;
 }
 
 .thumb > .abs-news-stats {
@@ -366,11 +381,75 @@ ul > li {
   color: var(--small-title);
 }
 /* NEWSLETTER BANNER */
+
 #newsletter-banner {
+  /* border: 3px solid firebrick; */
+  /* width: 100%; */
+  height: 12rem;
+}
+
+.news-banner-container {
+  width: 57rem;
+  height: 15rem;
+  border-radius: 2rem;
+  background-color: var(--card-petrol);
+  color: var(--big-title);
+}
+
+.news-text-container {
+  height: 10rem;
+  padding-top: 3rem;
+  padding-left: 3rem;
+  /* border: 3px solid lightskyblue; */
+}
+.mail-sender {
+  top: 90%;
+  left: 57%;
+
+  width: 17rem;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 /* FOOTER */
+footer {
+  background-color: var(--bg-card);
+  height: 50rem;
+}
 
-.row {
-  /* border: 1px solid firebrick; */
+.foot.row {
+  border: 3px solid blue;
+  padding-top: 15rem;
+  color: var(--description);
+}
+
+.foot .col-4 {
+  border: 3px solid red;
+  height: 15rem;
+}
+
+.foot.col-2 {
+  border: 3px solid orange;
+  height: 15rem;
+}
+
+.foot .logo {
+  border: 3px solid purple;
+  /* height: 10rem; */
+}
+
+.foot .social-logos {
+  border: 1px solid white;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.container-foot-titles {
+  border: 3px solid saddlebrown;
+  height: 5rem;
+}
+
+.container-foot.col-2 {
+  border: 3px solid blue;
 }

@@ -37,7 +37,7 @@ createApp({
         },
 
         {
-          name: "Pages",
+          name: "Latest Tournament",
           dropdownMenu: true,
           dropdowns: [
             {
@@ -64,6 +64,91 @@ createApp({
         {
           name: "Contact",
           dropdownMenu: false,
+        },
+      ],
+
+      // FOOTER
+      footLinks: [
+        // Quick Links
+        {
+          toDoTitle: "Quick Links",
+        },
+
+        {
+          toDo: "Games",
+        },
+
+        {
+          toDo: "Latest Tournament",
+        },
+
+        {
+          toDo: "Shop",
+        },
+
+        {
+          toDo: "Blog",
+        },
+
+        {
+          toDo: "Contact",
+        },
+        // faq
+        {
+          faqTitle: "Help",
+        },
+
+        {
+          faq: "Terms & Conditions",
+        },
+
+        {
+          faq: "FAQs",
+        },
+
+        {
+          faq: "Terms & Conditions",
+        },
+
+        {
+          faq: "Privacy",
+        },
+        // social
+        {
+          socialTitle: "Follow us",
+        },
+
+        {
+          social: "Facebook",
+        },
+
+        {
+          social: "Twitter",
+        },
+
+        {
+          social: "Instagram",
+        },
+
+        {
+          social: "Youtube",
+        },
+
+        {
+          social: "Github",
+        },
+        // location
+        {
+          addressTitle: "Contact",
+        },
+        {
+          name: "Location:",
+          address: "4 Mayfield, Buckden, PF30 033S",
+        },
+
+        {
+          name: "Phone:",
+          address: "(303)303-0330",
         },
       ],
     };

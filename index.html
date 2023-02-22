@@ -17,6 +17,15 @@
       rel="stylesheet"
     />
 
+    <!-- FONTAWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- BOOTSTRAP -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -362,6 +371,24 @@
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
               eum dolores alias esse aliquam quos.
             </div>
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <div class="card-title text-start">stars</div>
+
+                <p class="card-text text-start">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <img
+                  src="./img/testimonials carousel/testimonials-image-1.png"
+                  alt=""
+                  class="card-link"
+                />
+
+                <a href="#" class="card-link text-dark">Kim Ramos</a>
+                <p>Serbia</p>
+              </div>
+            </div>
             <!-- Carousel -->
           </div>
         </section>
@@ -392,7 +419,7 @@
             <h1 class="text-center">
               Stay Update With Our Latest News Articles
             </h1>
-            <div class="title-description text-center">
+            <div class="title-description text-center pb-5">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
               eum dolores alias esse aliquam quos.
             </div>
@@ -412,7 +439,7 @@
                   </h2>
                 </div>
                 <!-- Thumbnails -->
-                <div class="thumb col">
+                <div class="thumb col d-flex flex-column">
                   <div class="abs-news-stats d-flex">
                     <div>10 Min</div>
                     <div>240</div>
@@ -426,7 +453,7 @@
                   </div>
                   <!-- thumb 2 -->
                   <div class="thumb col">
-                    <div class="abs-news-stats d-flex justify-content-end">
+                    <div class="abs-news-stats d-flex">
                       <div>10 Min</div>
                       <div>240</div>
                       <div>Apr 11 2022</div>
@@ -440,7 +467,7 @@
                   </div>
                   <!-- thumb 3 -->
                   <div class="thumb col">
-                    <div class="abs-news-stats d-flex justify-content-end">
+                    <div class="abs-news-stats d-flex">
                       <div>10 Min</div>
                       <div>240</div>
                       <div>Apr 11 2022</div>
@@ -456,12 +483,92 @@
               </div>
             </div>
           </div>
-          <div id="newsletter-banner">Subscribe Newsletter</div>
+          <!-- Newsletter -->
+          <div id="newsletter-banner" class="position-relative">
+            <div
+              class="news-banner-container d-flex flex-wrap position-absolute top-100 start-50 translate-middle"
+            >
+              <div class="news-text-container">
+                <div class="title">Subscribe Newsletter</div>
+                <div class="sub-title">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Reiciendis eaque amet ipsum dolor sit amet!
+                </div>
+              </div>
+            </div>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="mail-sender position-absolute"
+            />
+          </div>
         </section>
-        <!-- Newslewtter -->
       </main>
       <!-- Footer -->
-      <footer></footer>
+      <footer>
+        <div class="container">
+          <div class="foot row">
+            <div class="foot col-4">
+              <div class="foot logo pt-3">
+                <img src="./img/header-img/logo.png" alt="" />
+                <div class="foot-text py-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
+                  atque harum. Ipsam alias itaque optio?
+                </div>
+                <div class="foot-social-container d-flex">
+                  <div
+                    class="foot social-logos d-flex align-items-center justify-content-center me-2"
+                  >
+                    <i class="fa-brands fa-youtube"></i>
+                  </div>
+                  <div
+                    class="foot social-logos d-flex align-items-center justify-content-center me-2"
+                  >
+                    <i class="fa-brands fa-twitch"></i>
+                  </div>
+                  <div
+                    class="foot social-logos d-flex align-items-center justify-content-center me-2"
+                  >
+                    <i class="fa-brands fa-facebook"></i>
+                  </div>
+                  <div
+                    class="foot social-logos d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="foot col-2">
+              <ul v-for="toDoLink in footLinks">
+                <li>{{ toDoLink.toDoTitle }}</li>
+                <li>{{ toDoLink.toDo }}</li>
+              </ul>
+            </div>
+            <div class="foot col-2">
+              <ul v-for="faqLink in footLinks">
+                <li>{{ faqLink.faqTitle }}</li>
+                <li>{{ faqLink.faq }}</li>
+              </ul>
+            </div>
+            <div class="foot col-2">
+              <ul v-for="SocialLink in footLinks">
+                <li>{{ SocialLink.socialTitle }}</li>
+                <li>{{ SocialLink.social }}</li>
+              </ul>
+            </div>
+            <div class="foot col-2">
+              <ul v-for="LocationLink in footLinks">
+                <li>{{ LocationLink.addressTitle }}</li>
+                <li>
+                  <div>{{ LocationLink.name }}</div>
+                  <div>{{ LocationLink.address }}</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <!-- BOOTSTRAP SCRIPT -->
     <script
