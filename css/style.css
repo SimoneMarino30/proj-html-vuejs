@@ -6,6 +6,7 @@
   --small-title: #94cb53;
   --bg-section-dark: #000000;
   --card-petrol: #30405f;
+  --bg-card: #1d2d49;
 }
 /* DARK GREEN: #08CB7B */
 /* LIGHT GREEN: #94CB53 */
@@ -160,8 +161,8 @@ ul > li {
 }
 
 .myCard {
-  background-color: #1d2d49;
-  border: 1px solid #1d2d49;
+  background-color: var(--bg-card);
+  /* border: 1px solid #1d2d49; */
   width: 40%;
   border-radius: 30px;
   height: 270px;
@@ -296,36 +297,80 @@ ul > li {
 
 #latest-news {
   background-color: var(--bg-section-dark);
-  height: 90vh;
+  height: 97vh;
 }
 
 .newsContainer {
-  border: 1px solid blue;
+  /* border: 1px solid gray; */
 }
+
 .main-news-img {
-  width: 400px;
-  height: 400px;
-  margin-top: 3rem;
-  border: 1px solid yellowgreen;
+  margin-top: 1rem;
+
+  background-color: var(--bg-card);
+  /* border: 1px solid cyan; */
+  border-radius: 20px;
 }
 
 .main-news-img > img {
   width: 100%;
 }
 
-.thumb {
-  width: 450px;
-  height: 150px;
-  gap: 1rem;
-  margin: 3rem 0 0 2rem;
-  border: 1px solid lightcoral;
+.news-text {
+  width: 80%;
+  color: var(--description);
+  font-size: 2.2rem;
+  height: 7rem;
+  /* padding-top: 0.5rem; */
 }
 
-.thumb > img {
-  width: 150px;
+.thumb {
+  position: relative;
+
+  /* margin-top: 3rem; */
+  /* border: 1px solid lightcoral; */
+}
+
+.thumb > .abs-news-stats {
+  position: absolute;
+  left: 45%;
+  margin-top: 1.5rem;
+  /* border: 1px solid yellow; */
+}
+
+.thumb > .abs-news-text {
+  position: absolute;
+  left: 45%;
+  width: 13rem;
+  padding-top: 1rem;
+  font-size: 1.3rem;
+  /* border: 1px solid red; */
+  color: var(--description);
+}
+.thumb-img {
+  padding: 0.5rem;
+  margin: 1rem 0;
+  background-color: var(--bg-card);
+  /* border: 1px solid white; */
+  border-radius: 10px;
+}
+
+.thumb-img > img {
+  width: 9rem;
+  /* border: 1px solid blue; */
+  border-radius: 10px;
+}
+
+.abs-news-stats > div {
+  margin-right: 2rem;
+  color: var(--small-title);
 }
 /* NEWSLETTER BANNER */
 #newsletter-banner {
 }
 
 /* FOOTER */
+
+.row {
+  /* border: 1px solid firebrick; */
+}
