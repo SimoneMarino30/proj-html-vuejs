@@ -371,24 +371,85 @@
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
               eum dolores alias esse aliquam quos.
             </div>
-            <div class="card" style="width: 18rem">
-              <div class="card-body">
-                <div class="card-title text-start">stars</div>
+            <!-- Feedback Card Container -->
+            <div class="feedback-card-container d-flex justify-content-around">
+              <div id="my-card" class="card" style="width: 18rem">
+                <div id="my-card-body" class="card-body">
+                  <div id="my-card-title" class="card-title text-start">
+                    stars
+                  </div>
 
-                <p class="card-text text-start">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <img
-                  src="./img/testimonials carousel/testimonials-image-1.png"
-                  alt=""
-                  class="card-link"
-                />
-
-                <a href="#" class="card-link text-dark">Kim Ramos</a>
-                <p>Serbia</p>
+                  <p id="my-card-text" class="card-text text-start">
+                    "Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Optio earum non nesciunt temporibus consequatur eligendi rem
+                    ."
+                  </p>
+                  <div class="d-flex flex">
+                    <img
+                      src="./img/testimonials carousel/testimonials-image-1.png"
+                      alt=""
+                      id="my-card-link"
+                      class="card-link"
+                    />
+                    <div class="d-flex flex-column ms-3">
+                      <div class="a">Kim Ross</div>
+                      <div class="a">Serbia</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 2nd Card -->
+              <div id="my-card" class="card" style="width: 18rem">
+                <div id="my-card-body" class="card-body">
+                  <div id="my-card-title" class="card-title text-start">
+                    stars
+                  </div>
+                  <p id="my-card-text" class="card-text text-start">
+                    "Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Optio earum non nesciunt temporibus consequatur eligendi rem
+                    ."
+                  </p>
+                  <div class="d-flex flex">
+                    <img
+                      src="./img/testimonials carousel/testimonials-image-1.png"
+                      alt=""
+                      id="my-card-link"
+                      class="card-link"
+                    />
+                    <div class="d-flex flex-column ms-3">
+                      <div class="a">Kim Ross</div>
+                      <div class="a">Serbia</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 3rd Card -->
+              <div id="my-card" class="card" style="width: 18rem">
+                <div id="my-card-body" class="card-body">
+                  <div id="my-card-title" class="card-title text-start">
+                    stars
+                  </div>
+                  <p id="my-card-text" class="card-text text-start">
+                    "Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Optio earum non nesciunt temporibus consequatur eligendi rem
+                    ."
+                  </p>
+                  <div class="d-flex flex">
+                    <img
+                      src="./img/testimonials carousel/testimonials-image-1.png"
+                      alt=""
+                      id="my-card-link"
+                      class="card-link"
+                    />
+                    <div class="d-flex flex-column ms-3">
+                      <div class="a">Kim Ross</div>
+                      <div class="a">Serbia</div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+
             <!-- Carousel -->
           </div>
         </section>
@@ -541,25 +602,27 @@
             </div>
             <div class="foot col-2">
               <ul v-for="toDoLink in footLinks">
-                <li>{{ toDoLink.toDoTitle }}</li>
+                <li class="fs-4 fw-semibold mt-3">{{ toDoLink.toDoTitle }}</li>
                 <li>{{ toDoLink.toDo }}</li>
               </ul>
             </div>
             <div class="foot col-2">
               <ul v-for="faqLink in footLinks">
-                <li>{{ faqLink.faqTitle }}</li>
+                <li class="fs-4 fw-semibold">{{ faqLink.faqTitle }}</li>
                 <li>{{ faqLink.faq }}</li>
               </ul>
             </div>
             <div class="foot col-2">
               <ul v-for="SocialLink in footLinks">
-                <li>{{ SocialLink.socialTitle }}</li>
+                <li class="fs-4 fw-semibold">{{ SocialLink.socialTitle }}</li>
                 <li>{{ SocialLink.social }}</li>
               </ul>
             </div>
             <div class="foot col-2">
               <ul v-for="LocationLink in footLinks">
-                <li>{{ LocationLink.addressTitle }}</li>
+                <li class="fs-4 fw-semibold">
+                  {{ LocationLink.addressTitle }}
+                </li>
                 <li>
                   <div>{{ LocationLink.name }}</div>
                   <div>{{ LocationLink.address }}</div>
@@ -570,6 +633,7 @@
         </div>
       </footer>
     </div>
+    <section id="copy"></section>
     <!-- BOOTSTRAP SCRIPT -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
